@@ -17,8 +17,15 @@ class GeoIp implements GeoIpInterface {
 
     public function lookup($ip)
     {
-        $httpClient = $this->httpClient->create();
-        $httpClient->get("http://ip-api.com/json/" . $ip);
-        return $httpClient->getBody();
+        $response = null;
+        try {
+            $httpClient = $this->httpClient->create();
+            $httpClient->get("http://ip-api.com/json/" . $ip);
+            $response = $httpClient->getBody();
+        } catch (\Exception  $e) {
+            $response = '';
+        }
+
+        return $response;
     }
 }

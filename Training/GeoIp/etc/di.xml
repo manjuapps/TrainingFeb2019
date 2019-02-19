@@ -8,5 +8,11 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="\Training\GeoIp\Api\VisitorLocationInterface" type="Training\GeoIp\Model\VisitorLocation" />
     <preference for="\Training\GeoIp\Api\ConverterInterface" type="Training\GeoIp\Model\Converter" />
-    <preference for="\Training\GeoIp\Api\GeoIpInterface" type="Training\GeoIp\Model\GeoIp" />
+    <preference for="\Training\GeoIp\Api\GeoIpInterface" type="Training\GeoIp\Model\GeoIpCacher" />
+    <preference for="\Training\GeoIp\Api\Data\LocationDTOInterface" type="Training\GeoIp\Model\Data\LocationDTO" />
+    <type name="Training\GeoIp\Model\GeoIpCacher">
+        <arguments>
+            <argument name="geoIp" xsi:type="object">Training\GeoIp\Model\GeoIp</argument>
+        </arguments>
+    </type>
 </config>

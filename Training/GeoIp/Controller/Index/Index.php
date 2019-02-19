@@ -20,7 +20,8 @@ class Index extends \Magento\Framework\App\Action\Action {
 
     public function execute()
     {
-        var_dump($this->visitorLocation->getAreas());
+        $r = $this->visitorLocation->getAreas();
+        print_r($r->getCountry());
         exit;
     }
 }
