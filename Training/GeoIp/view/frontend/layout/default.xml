@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="main">
+            <block name="custom.block"
+                   class="Magento\Framework\View\Element\Template"
+                   template="Training_GeoIp::hello.phtml"
+                   before="-">
+                    <block name="child.block1"
+                            class="Magento\Framework\View\Element\Template"
+                            template="Training_GeoIp::child1.phtml" />
+                    <block name="child.block2"
+                           class="Magento\Framework\View\Element\Template"
+                           template="Training_GeoIp::child2.phtml" />
+            </block>
+        </referenceContainer>
+    </body>
+</page>
