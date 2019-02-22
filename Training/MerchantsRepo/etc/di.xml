@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Training\MerchantsRepo\Api\Data\MerchantDTOInterface" type="Training\MerchantsRepo\Model\Data\MerchantsDTO"/>
+    <preference for="Training\MerchantsRepo\Api\MerchantsRepositoryInterface" type="Training\MerchantsRepo\Model\MerchantsRepository"/>
+    <preference for="Training\MerchantsRepo\Api\SearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+</config>

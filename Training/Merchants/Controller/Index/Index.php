@@ -31,7 +31,7 @@ class Index extends \Magento\Framework\App\Action\Action {
         /** @var \Training\Merchants\Model\Merchants $merchant */
         $merchant = $this->merchantsFactory->create();
         $this->merchantResource->load($merchant, $this->getRequest()->getParam('id', 1));
-        var_dump($merchant->getRegion());
+        var_dump($merchant);
 
         /** @var \Training\Merchants\Model\Merchants $merchant1 */
 //        $merchant1 = $this->merchantsFactory->create();
