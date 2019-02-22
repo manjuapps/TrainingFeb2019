@@ -1,0 +1,20 @@
+Deployment:
+https://devdocs.magento.com/guides/v2.2/config-guide/deployment/single-machine.html
+
+Devdocs:
+https://devdocs.magento.com/
+
+Stackoverflow:
+https://magento.stackexchange.com
+
+Community Forum:
+https://community.magento.com/
+
+Best Practices for API Design:
+https://community.magento.com/t5/Magento-DevBlog/Best-Practices-for-API-Design/ba-p/119868
+
+Coding Standards:
+https://devdocs.magento.com/guides/v2.3/coding-standards/technical-guidelines.html
+
+Github:
+https://github.com/magento/magento2

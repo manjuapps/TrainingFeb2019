@@ -4,4 +4,11 @@
     <preference for="Training\MerchantsRepo\Api\Data\MerchantDTOInterface" type="Training\MerchantsRepo\Model\Data\MerchantsDTO"/>
     <preference for="Training\MerchantsRepo\Api\MerchantsRepositoryInterface" type="Training\MerchantsRepo\Model\MerchantsRepository"/>
     <preference for="Training\MerchantsRepo\Api\SearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+    <type name="\Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="merchants_data_source" xsi:type="string">Training\Merchants\Model\ResourceModel\Merchants\Collection</item>
+            </argument>
+        </arguments>
+    </type>
 </config>

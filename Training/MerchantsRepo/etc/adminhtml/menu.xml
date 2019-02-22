@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Training_MerchantsRepo::manage"
+             title="Training"
+             translate="title"
+             module="Training_MerchantsRepo"
+             sortOrder="30"
+             resource="Training_MerchantsRepo::manage"/>
+        <add id="Training_MerchantsRepo::merchants_info"
+             title="Merchants Information"
+             translate="title"
+             module="Training_MerchantsRepo"
+             sortOrder="30"
+             parent="Training_MerchantsRepo::manage"
+             resource="Training_MerchantsRepo::merchants_info"/>
+        <add id="Training_MerchantsRepo::merchants"
+             title="Merchants"
+             translate="title"
+             module="Training_MerchantsRepo"
+             sortOrder="30"
+             action="merchants/index/index"
+             parent="Training_MerchantsRepo::merchants_info"
+             resource="Training_MerchantsRepo::merchants"/>
+    </menu>
+</config>
